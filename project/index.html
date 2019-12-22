@@ -1,17 +1,74 @@
-﻿<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Today's Date</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
+﻿<!-- <html>
 <body>
 
-</body>
+<p>How would you like your coffee?</p>
 
+<form>
+  <input type="radio" name="coffee" value="cream">With cream<br>
+  <input type="radio" name="coffee" value="sugar">With sugar<br>
+  <br>
+  <input type="button" onclick="myFunction()" value="Send order">
+  <br><br>
+  <input type="text" id="order" size="50">
+  <!-- <input type="submit" value="Submit"> -->
+<!-- </form> -->
+
+<!-- <script>
+function myFunction() {
+  var coffee = document.forms[0];
+  var txt = "";
+  var i;
+  for (i = 0; i < coffee.length; i++) {
+    if (coffee[i].checked) {
+      txt = txt + coffee[i].value + " ";
+    }
+  }
+  document.getElementById("order").value = "You ordered a coffee with: " + txt;
+}
+</script> -->
+<!-- <script src="js/script.js"></script> -->
+
+<!-- </body>
+</html> --> -->
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Selected Radio Button Value</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- <script>
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='gender']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue);
+            }
+        });
+    });
+</script> -->
 <script src="js/script.js"></script>
+</head> 
+<body>
+    <h4>Please select your gender.</h4>
+    <p> 
+        <label><input type="radio" name="gender" value="male">Male</label> 
+        <label><input type="radio" name="gender" value="female">Female</label>
+    </p>
+    <p><input type="button" value="Get Value"></p>
+</body>
+<div id="myRadioGroup">
+    <input type="radio" name="cars" value="2"  />2 Cars
+    <input type="radio" name="cars" value="3" />3 Cars
 
+    <div id="Cars2" class="desc" style="display: none;">
+        <!-- 2 Cars select -->
+        <!-- <iframe src="demo_iframe.htm" height="200" width="300"></iframe> -->
+        <iframe src="http://localhost:5601/app/kibana#/visualize/edit/707665a0-4c8c-11e8-b3d7-01146121b73d?embed=true&_g=(refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(filters:!(),linked:!f,query:(language:kuery,query:''),uiState:(),vis:(aggs:!((enabled:!t,id:'1',params:(customLabel:''),schema:metric,type:count),(enabled:!t,id:'2',params:(customLabel:'Flight+Cancellations',field:Cancelled,missingBucket:!f,missingBucketLabel:Missing,order:desc,orderBy:'1',otherBucket:!f,otherBucketLabel:Other,size:5),schema:segment,type:terms)),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,categoryAxes:!((id:CategoryAxis-1,labels:(show:!t,truncate:100),position:left,scale:(type:linear),show:!t,style:(),title:(),type:category)),grid:(categoryLines:!f,style:(color:%23eee)),labels:(show:!f),legendPosition:right,seriesParams:!((data:(id:'1',label:Count),drawLinesBetweenPoints:!t,mode:stacked,show:true,showCircles:!t,type:histogram,valueAxis:ValueAxis-1)),thresholdLine:(color:%2334130C,show:!f,style:full,value:10,width:1),times:!(),type:histogram,valueAxes:!((id:ValueAxis-1,labels:(filter:!f,rotate:0,show:!t,truncate:100),name:BottomAxis-1,position:bottom,scale:(mode:normal,type:linear),show:!t,style:(),title:(text:Count),type:value))),title:'%5BFlights%5D+Flight+Cancellations',type:histogram))" height="600" width="800"></iframe>
+    </div>
+    <div id="Cars3" class="desc" style="display: none;">
+        <!-- 3 Cars select -->
+        <!-- <iframe src="https://www.w3schools.com" height="200" width="300"></iframe> -->
+        <iframe src="http://localhost:5601/app/kibana#/visualize/edit/707665a0-4c8c-11e8-b3d7-01146121b73d?embed=true&_g=(refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(filters:!(),linked:!f,query:(language:kuery,query:''),uiState:(),vis:(aggs:!((enabled:!t,id:'1',params:(customLabel:''),schema:metric,type:count),(enabled:!t,id:'2',params:(customLabel:'Flight+Cancellations',field:Cancelled,missingBucket:!f,missingBucketLabel:Missing,order:desc,orderBy:'1',otherBucket:!f,otherBucketLabel:Other,size:5),schema:segment,type:terms)),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,categoryAxes:!((id:CategoryAxis-1,labels:(show:!t,truncate:100),position:left,scale:(type:linear),show:!t,style:(),title:(),type:category)),dimensions:(x:(accessor:0,aggType:terms,format:(id:terms,params:(id:boolean,missingBucketLabel:Missing,otherBucketLabel:Other)),params:()),y:!((accessor:1,aggType:count,format:(id:number),params:()))),grid:(categoryLines:!f,style:(color:%23eee)),labels:(show:!f),legendPosition:right,seriesParams:!((data:(id:'1',label:Count),drawLinesBetweenPoints:!t,mode:stacked,show:true,showCircles:!t,type:line,valueAxis:ValueAxis-1)),thresholdLine:(color:%2334130C,show:!f,style:full,value:10,width:1),times:!(),type:histogram,valueAxes:!((id:ValueAxis-1,labels:(filter:!f,rotate:0,show:!t,truncate:100),name:BottomAxis-1,position:bottom,scale:(mode:normal,type:linear),show:!t,style:(),title:(text:Count),type:value))),title:'',type:histogram))" height="600" width="800"></iframe>
+    </div>
+</div>
 </html>
