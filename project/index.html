@@ -29,12 +29,12 @@ function myFunction() {
 <!-- <script src="js/script.js"></script> -->
 
 <!-- </body>
-</html> --> -->
+</html> -->
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery Get Selected Radio Button Value</title>
+<title>Kibana</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!-- <script>
     $(document).ready(function(){
@@ -49,26 +49,38 @@ function myFunction() {
 <script src="js/script.js"></script>
 </head> 
 <body>
-    <h4>Please select your gender.</h4>
-    <p> 
+    <h4>Please select your chart.</h4>
+    <!-- <p> 
         <label><input type="radio" name="gender" value="male">Male</label> 
         <label><input type="radio" name="gender" value="female">Female</label>
-    </p>
-    <p><input type="button" value="Get Value"></p>
+    </p> -->
+    <!-- <p><input type="button" value="Get Value"></p> -->
 </body>
 <div id="myRadioGroup">
-    <input type="radio" name="cars" value="2"  />2 Cars
-    <input type="radio" name="cars" value="3" />3 Cars
-
-    <div id="Cars2" class="desc" style="display: none;">
+    <input type="radio" name="charts" value="1" />Axis
+    <input type="radio" name="charts" value="2" />Level
+    <input type="radio" name="charts" value="3" />Plant
+    <input type="radio" name="charts" value="4" />Occurrence process
+    <input type="radio" name="charts" value="5" />Department
+    <div id="Charts0" class="desc" >
+        <iframe src="http://localhost:5601/app/kibana#/dashboard/588df860-24d3-11ea-8a55-e94eb50ccb80?embed=true&_g=(filters:!(),refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze+mock+flight+data+for+ES-Air,+Logstash+Airways,+Kibana+Airlines+and+JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(vis:(colors:(ES-Air:%23447EBC,JetBeats:%2365C5DB,'Kibana+Airlines':%23BA43A9,'Logstash+Airways':%23E5AC0E),legendOpen:!f)),gridData:(h:19,i:'5',w:48,x:0,y:0),id:'8f4d0c00-4c86-11e8-b3d7-01146121b73d',panelIndex:'5',type:visualization,version:'7.5.0')),query:(language:kuery,query:''),timeRestore:!t,title:Demo,viewMode:view)" height="600" width="800"></iframe>
+    </div>
+    <div id="Charts1" class="desc" style="display: none;">
+        <iframe src="http://localhost:5601/app/kibana#/dashboard/281e77d0-24d9-11ea-8a55-e94eb50ccb80?embed=true&_g=(filters:!(),refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze+mock+flight+data+for+ES-Air,+Logstash+Airways,+Kibana+Airlines+and+JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(vis:(colors:(Count:%231F78C1),legendOpen:!f)),gridData:(h:19,i:'14',w:47,x:1,y:0),id:'707665a0-4c8c-11e8-b3d7-01146121b73d',panelIndex:'14',type:visualization,version:'7.5.0')),query:(language:kuery,query:''),timeRestore:!t,title:Demo2,viewMode:view)" height="600" width="800"></iframe>
+    </div>
+    <div id="Charts2" class="desc" style="display: none;">
+        <iframe src="http://localhost:5601/app/kibana#/dashboard/7220d940-24d9-11ea-8a55-e94eb50ccb80?embed=true&_g=(filters:!(),refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze+mock+flight+data+for+ES-Air,+Logstash+Airways,+Kibana+Airlines+and+JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(vis:(colors:(Count:%231F78C1),legendOpen:!f)),gridData:(h:19,i:'10',w:47,x:0,y:0),id:'9886b410-4c8b-11e8-b3d7-01146121b73d',panelIndex:'10',type:visualization,version:'7.5.0')),query:(language:kuery,query:''),timeRestore:!t,title:Demo3,viewMode:view)" height="600" width="800"></iframe>
+    </div>
+    <div id="Charts3" class="desc" style="display: none;">
         <!-- 2 Cars select -->
         <!-- <iframe src="demo_iframe.htm" height="200" width="300"></iframe> -->
         <iframe src="http://localhost:5601/app/kibana#/visualize/edit/707665a0-4c8c-11e8-b3d7-01146121b73d?embed=true&_g=(refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(filters:!(),linked:!f,query:(language:kuery,query:''),uiState:(),vis:(aggs:!((enabled:!t,id:'1',params:(customLabel:''),schema:metric,type:count),(enabled:!t,id:'2',params:(customLabel:'Flight+Cancellations',field:Cancelled,missingBucket:!f,missingBucketLabel:Missing,order:desc,orderBy:'1',otherBucket:!f,otherBucketLabel:Other,size:5),schema:segment,type:terms)),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,categoryAxes:!((id:CategoryAxis-1,labels:(show:!t,truncate:100),position:left,scale:(type:linear),show:!t,style:(),title:(),type:category)),grid:(categoryLines:!f,style:(color:%23eee)),labels:(show:!f),legendPosition:right,seriesParams:!((data:(id:'1',label:Count),drawLinesBetweenPoints:!t,mode:stacked,show:true,showCircles:!t,type:histogram,valueAxis:ValueAxis-1)),thresholdLine:(color:%2334130C,show:!f,style:full,value:10,width:1),times:!(),type:histogram,valueAxes:!((id:ValueAxis-1,labels:(filter:!f,rotate:0,show:!t,truncate:100),name:BottomAxis-1,position:bottom,scale:(mode:normal,type:linear),show:!t,style:(),title:(text:Count),type:value))),title:'%5BFlights%5D+Flight+Cancellations',type:histogram))" height="600" width="800"></iframe>
     </div>
-    <div id="Cars3" class="desc" style="display: none;">
-        <!-- 3 Cars select -->
-        <!-- <iframe src="https://www.w3schools.com" height="200" width="300"></iframe> -->
-        <iframe src="http://localhost:5601/app/kibana#/visualize/edit/707665a0-4c8c-11e8-b3d7-01146121b73d?embed=true&_g=(refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(filters:!(),linked:!f,query:(language:kuery,query:''),uiState:(),vis:(aggs:!((enabled:!t,id:'1',params:(customLabel:''),schema:metric,type:count),(enabled:!t,id:'2',params:(customLabel:'Flight+Cancellations',field:Cancelled,missingBucket:!f,missingBucketLabel:Missing,order:desc,orderBy:'1',otherBucket:!f,otherBucketLabel:Other,size:5),schema:segment,type:terms)),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,categoryAxes:!((id:CategoryAxis-1,labels:(show:!t,truncate:100),position:left,scale:(type:linear),show:!t,style:(),title:(),type:category)),dimensions:(x:(accessor:0,aggType:terms,format:(id:terms,params:(id:boolean,missingBucketLabel:Missing,otherBucketLabel:Other)),params:()),y:!((accessor:1,aggType:count,format:(id:number),params:()))),grid:(categoryLines:!f,style:(color:%23eee)),labels:(show:!f),legendPosition:right,seriesParams:!((data:(id:'1',label:Count),drawLinesBetweenPoints:!t,mode:stacked,show:true,showCircles:!t,type:line,valueAxis:ValueAxis-1)),thresholdLine:(color:%2334130C,show:!f,style:full,value:10,width:1),times:!(),type:histogram,valueAxes:!((id:ValueAxis-1,labels:(filter:!f,rotate:0,show:!t,truncate:100),name:BottomAxis-1,position:bottom,scale:(mode:normal,type:linear),show:!t,style:(),title:(text:Count),type:value))),title:'',type:histogram))" height="600" width="800"></iframe>
+    <div id="Charts4" class="desc" style="display: none;">
+        <iframe src="http://localhost:5601/app/kibana#/dashboard/77a38610-24d9-11ea-8a55-e94eb50ccb80?embed=true&_g=(filters:!(),refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze+mock+flight+data+for+ES-Air,+Logstash+Airways,+Kibana+Airlines+and+JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(vis:(colors:('Carrier+Delay':%235195CE,'Late+Aircraft+Delay':%231F78C1,'NAS+Delay':%2370DBED,'No+Delay':%23BADFF4,'Security+Delay':%23052B51,'Weather+Delay':%236ED0E0))),gridData:(h:19,i:'6',w:48,x:0,y:0),id:f8290060-4c88-11e8-b3d7-01146121b73d,panelIndex:'6',type:visualization,version:'7.5.0')),query:(language:kuery,query:''),timeRestore:!t,title:Demo4,viewMode:view)" height="600" width="800"></iframe>
+    </div>
+    <div id="Charts5" class="desc" style="display: none;">
+        <iframe src="http://localhost:5601/app/kibana#/dashboard/816ed910-24d9-11ea-8a55-e94eb50ccb80?embed=true&_g=(filters:!(),refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze+mock+flight+data+for+ES-Air,+Logstash+Airways,+Kibana+Airlines+and+JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(timeRange:(from:now-1h,to:now),vis:(colors:('Carrier+Delay':%235195CE,'Late+Aircraft+Delay':%231F78C1,'NAS+Delay':%2370DBED,'No+Delay':%23BADFF4,'Security+Delay':%23052B51,'Weather+Delay':%236ED0E0))),gridData:(h:19,i:'6',w:48,x:0,y:0),id:f8290060-4c88-11e8-b3d7-01146121b73d,panelIndex:'6',type:visualization,version:'7.5.0')),query:(language:kuery,query:''),timeRestore:!t,title:Demo5,viewMode:view)" height="600" width="800"></iframe>
     </div>
 </div>
 </html>
